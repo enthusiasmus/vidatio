@@ -64,9 +64,9 @@
 }
 #u3 {
   position:absolute;
-  left:1195px;
-  top:48px;
-  width:58px;
+  left:1193px;
+  top:59px;
+  width:55px;
   height:53px;
   overflow:hidden;
 }
@@ -74,7 +74,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:58px;
+  width:55px;
   height:53px;
   -ms-overflow-x:hidden;
   overflow-x:hidden;
@@ -91,9 +91,9 @@
 }
 #u4 {
   position:absolute;
-  left:1132px;
-  top:47px;
-  width:60px;
+  left:1135px;
+  top:59px;
+  width:50px;
   height:53px;
   overflow:hidden;
 }
@@ -101,7 +101,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:60px;
+  width:50px;
   height:53px;
   -ms-overflow-x:hidden;
   overflow-x:hidden;
@@ -118,10 +118,10 @@
 }
 #u5 {
   position:absolute;
-  left:992px;
-  top:-21px;
-  width:308px;
-  height:1533px;
+  left:988px;
+  top:-8px;
+  width:312px;
+  height:1520px;
   overflow:hidden;
   visibility:hidden;
 }
@@ -129,8 +129,8 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:308px;
-  height:1533px;
+  width:312px;
+  height:1520px;
   -ms-overflow-x:hidden;
   overflow-x:hidden;
   -ms-overflow-y:hidden;
@@ -452,8 +452,8 @@
 }
 #u26 {
   position:absolute;
-  left:1076px;
-  top:34px;
+  left:1072px;
+  top:48px;
   width:176px;
   height:150px;
   overflow:hidden;
@@ -615,7 +615,7 @@
 #u36 {
   position:absolute;
   left:49px;
-  top:50px;
+  top:62px;
   width:140px;
   height:50px;
   overflow:hidden;
