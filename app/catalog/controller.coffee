@@ -3,6 +3,7 @@
 app = angular.module "app.controllers"
 
 app.controller "CatalogCtrl", [
+    "$rootScope"
     "$scope"
     "ProgressService"
     "DataService"
@@ -15,7 +16,7 @@ app.controller "CatalogCtrl", [
     "TagsService"
     "$log"
     "$timeout"
-    ($scope, Progress, Data, $translate, ngToast, $stateParams, $state, Datasets, Categories, Tags, $log, $timeout) ->
+    ($rootScope, $scope, Progress, Data, $translate, ngToast, $stateParams, $state, Datasets, Categories, Tags, $log, $timeout) ->
         $timeout ->
             $("#search-title").on "focus", ->
                 $("#search-filter").addClass "active"
