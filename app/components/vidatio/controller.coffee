@@ -22,6 +22,8 @@ app.controller "VidatioCtrl", [
                 $scope.authorized = globals.currentUser.id is $scope.vidatio.metaData.userId._id
             else
                 $scope.authorized = false
+
+            $scope.vidatio.image = if /(png|jpg)/.test($scope.vidatio.visualizationOptions.thumbnail) then $scope.vidatio.visualizationOptions.thumbnail else "images/logo-greyscale.svg"
         , true
 
         $scope.openInEditor = ->

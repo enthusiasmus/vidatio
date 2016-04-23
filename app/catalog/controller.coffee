@@ -66,7 +66,7 @@ app.controller "CatalogCtrl", [
                     className: "danger"
         ###
 
-        $scope.vidatiosURL = $rootScope.apiBase + $rootScope.apiVersion + "/datasets/"
+        $scope.vidatiosURL = $rootScope.apiBase + $rootScope.apiVersion + "/datasets"
         $scope.vidatiosParameters =
             "limit": 4
 
