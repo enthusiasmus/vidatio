@@ -45,6 +45,7 @@ module.exports = (config) ->
             "./bower_components/angulartics/src/angulartics.js"
             "./bower_components/angulartics-piwik/src/angulartics-piwik.js"
             "./bower_components/bootbox.js/bootbox.js"
+            "./bower_components/angular-paginate-anything/dist/angular-paginate-anything-tpls.js"
 
             # import angular mock - test dependency
             "./bower_components/angular-mocks/angular-mocks.js"

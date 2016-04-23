@@ -121,6 +121,7 @@ BUILD =
             "./bower_components/angulartics/src/angulartics.js"
             "./bower_components/angulartics-piwik/src/angulartics-piwik.js"
             "./bower_components/bootbox.js/bootbox.js"
+            "./bower_components/angular-paginate-anything/dist/angular-paginate-anything-tpls.js"
         ]
         css: [
             "./bower_components/bootstrap/dist/css/bootstrap.css"

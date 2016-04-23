@@ -50,6 +50,7 @@ app.controller "CatalogCtrl", [
                     content: translation
                     className: "danger"
 
+        ###
         Datasets.query (response) ->
             $scope.vidatios = response
 
@@ -62,6 +63,11 @@ app.controller "CatalogCtrl", [
                 ngToast.create
                     content: translation
                     className: "danger"
+        ###
+
+        $scope.vidatiosURL = $rootScope.apiBase + $rootScope.apiVersion + "/datasets/"
+        $scope.vidatiosParameters =
+            "limit": 4
 
         # the values of the datepicker need to be watched, because the ng-change directive never executes a function
         $scope.$watch "filter.dates.from", ->

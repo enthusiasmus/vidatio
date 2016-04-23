@@ -44,6 +44,7 @@
             p {{ "NO_DATASETS" | translate }}
 
         .vidatios.col-xs-12.col-sm-12.col-md-9.col-lg-9(ng-show="vidatios.length")
+            bgf-pagination(url="vidatiosURL" url-params="vidatiosParameters" collection="vidatios" per-page="2")
             .row.cards
                 .col-xs-12.col-sm-6.col-md-4.col-lg-4(
                     ng-repeat="vidatio in vidatios | dateFilter: filter.dates.from : filter.dates.to | categoryFilter : filter.category| tagsFilter: filter.tags | searchFilter: filter.name | myVidatioFilter : filter.showMyVidatios"
