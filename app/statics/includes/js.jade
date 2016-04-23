@@ -1,6 +1,10 @@
-//- script(type='text/javascript').
-//-   L_PREFER_CANVAS = true
 script(src="js/plugins.js")
 script(src="js/config.js")
 script(src="js/app.js")
 script(src="js/templates.js")
+
+script(type="text/ng-template" id="src/paginate-anything.html")
+    .paginate-anything
+        p {{numPages}}
+        ul.links.pagination(class="pagination-{{size}}", ng-if="numPages > 1")
+            li test
