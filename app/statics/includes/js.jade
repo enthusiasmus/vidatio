@@ -5,10 +5,6 @@ script(src="js/templates.js")
 
 script(type="text/ng-template" id="src/paginate-anything.html")
     .paginate-anything
-        p {{numPages}}
-        p {{page}}
-        p {{numItems}}
-        p {{url-params}}
         ul.pagination.links(class='pagination-{{size}}', ng-if='numPages > 1')
             li(ng-class='{disabled: page <= 0}')
                 a(href='', ng-click='gotoPage(page-1)') &laquo;

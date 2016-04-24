@@ -67,8 +67,6 @@ app.controller "CatalogCtrl", [
         ###
 
         $scope.vidatiosURL = $rootScope.apiBase + $rootScope.apiVersion + "/datasets"
-        $scope.vidatiosParameters =
-            "limit": 99
 
         # the values of the datepicker need to be watched, because the ng-change directive never executes a function
         $scope.$watch "filter.dates.from", ->
