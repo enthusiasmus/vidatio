@@ -40,8 +40,8 @@ app.controller "CatalogCtrl", [
 
         stateParams = {}
         $scope.maxDate = moment.tz('CET')
-
         $scope.tags = Tags.getAndPreprocessTags()
+        $scope.vidatiosURL = $rootScope.apiBase + $rootScope.apiVersion + "/datasets"
 
         Categories.query (response) ->
             $scope.categories = response
@@ -50,23 +50,6 @@ app.controller "CatalogCtrl", [
                 ngToast.create
                     content: translation
                     className: "danger"
-
-        ###
-        Datasets.query (response) ->
-            $scope.vidatios = response
-
-            for vidatio, index in $scope.vidatios
-                vidatio.title = vidatio.metaData.name
-                vidatio.image = if /(png|jpg)/.test(vidatio.visualizationOptions.thumbnail) then vidatio.visualizationOptions.thumbnail else "images/logo-greyscale.svg"
-                vidatio.createdAt = new Date(vidatio.createdAt)
-        , (error) ->
-            $translate('TOAST_MESSAGES.VIDATIOS_COULD_NOT_BE_LOADED').then (translation) ->
-                ngToast.create
-                    content: translation
-                    className: "danger"
-        ###
-
-        $scope.vidatiosURL = $rootScope.apiBase + $rootScope.apiVersion + "/datasets"
 
         # the values of the datepicker need to be watched, because the ng-change directive never executes a function
         $scope.$watch "filter.dates.from", ->
